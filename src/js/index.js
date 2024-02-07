@@ -10,7 +10,7 @@ const { searchForm, gallery, buttonLoadMore } = int;
 
 const paramsNotify = {
     position: 'center-center',
-    timeout: 4000,
+    timeout: 4000000,
     width: '400px',
     fontSize: '28px'
 };

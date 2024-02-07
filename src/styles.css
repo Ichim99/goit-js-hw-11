@@ -97,7 +97,7 @@ height: 240px;
     justify-content: center;
     position: relative;
     display: inline-block;
-    transition: background-color 0.3s;
+    
 }
 
 .img-wrap {

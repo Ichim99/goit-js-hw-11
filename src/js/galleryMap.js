@@ -5,6 +5,10 @@ const int = {
     buttonLoadMore : document.querySelector('.load-more'),
 }
 
+ function formatNumberWithCommas(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 const { gallery } = int;
 
 export function createGalleryMap(searchPhoto) {
@@ -16,10 +20,10 @@ export function createGalleryMap(searchPhoto) {
             </a>
         </div>
         <div class="info" >
-          <p class="info-item"><b>${svgLike} ${likes}</b></p>
-          <p class="info-item"><b>${svgView} ${views}</b></p>
-          <p class="info-item"><b>${svgComment} ${comments}</b></p>
-          <p class="info-item"><b>${svgDownload} ${downloads}</b></p>
+          <p class="info-item"><b>${svgLike} ${formatNumberWithCommas(likes)}</b></p>
+          <p class="info-item"><b>${svgView} ${formatNumberWithCommas(views)}</b></p>
+          <p class="info-item"><b>${svgComment} ${formatNumberWithCommas(comments)}</b></p>
+          <p class="info-item"><b>${svgDownload} ${formatNumberWithCommas(downloads)}</b></p>
         </div></div>
       </div>`
     });
