@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #fafafa;
+    color: #212121;
+    line-height: 1.5;
+}
+.icon-like{
+    fill: #0d161b;
+    width: 10px;
+    height: 10px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border: 1px solid #0d161b;
+    border-radius: 5px;
+}
+
+.is-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+   position: absolute;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    padding: 5px 5px 5px 15px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #0087f5dc;
+}
+
+button:hover,
+button:focus {
+    background-color: #acaaaa;
+}
+
+.gallery {
+    margin-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px
+}
+.img-space{
+width: 350px;
+height: 240px;
+}
+.photo-card {
+    border-radius: 5px;  
+    max-width: 350px;
+      height: 100%;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.img-wrap {
+    height: 240px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-link {
+    display: block;
+    text-decoration: none;
+}
+
+.load-more {
+    margin: 40px auto;
+    width: 200px;
+    background-color: #0087f5dc;
+}
+.info-item{
+    bottom: 0px;
+    
+}
+.info-item svg{
+    height: 18px;
+    width: 21px;
+    fill: #000;
+   
+}
+.info-item b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.info{
+    position: absolute;
+    bottom: 0px;
+    left: 3px;
+   display: none;
+    color: #000;
+    
+}
+.photo-card:hover .info{
+    display: block;
+}
+.photo-card:hover > .img-wrap {
+    opacity: 0.6;
+}
