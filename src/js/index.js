@@ -4,7 +4,7 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchPhoto } from './axios';
 import { createGalleryMap } from './galleryMap';
 import { reference } from './reference';
-
+require('dotenv').config();
 
 const { searchForm, gallery, buttonLoadMore } = reference;
 
