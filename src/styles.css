@@ -95,7 +95,7 @@ height: 240px;
     max-width: 350px;
       height: 100%;
     justify-content: center;
-    position: relative;
+    
     display: inline-block;
     
 }
@@ -121,12 +121,7 @@ height: 240px;
     bottom: 0px;
     
 }
-.info-item svg{
-    height: 18px;
-    width: 21px;
-    fill: #000;
-   
-}
+
 .info-item b{
     display: flex;
     flex-direction: column;
@@ -135,16 +130,6 @@ height: 240px;
     
 }
 .info{
-    position: absolute;
-    bottom: 0px;
-    left: 3px;
-   display: none;
     color: #000;
     
-}
-.photo-card:hover .info{
-    display: block;
-}
-.photo-card:hover > .img-wrap {
-    opacity: 0.6;
 }

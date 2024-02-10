@@ -3,10 +3,10 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import { fetchPhoto } from './axios';
 import { createGalleryMap } from './galleryMap';
-import { int } from './galleryMap';
+import { reference } from './reference';
 
 
-const { searchForm, gallery, buttonLoadMore } = int;
+const { searchForm, gallery, buttonLoadMore } = reference;
 
 const paramsNotify = {
     position: 'center-center',
