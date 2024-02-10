@@ -1,5 +1,5 @@
+require('dotenv').config();
 import axios from 'axios';
-
 
 const URL = "https://pixabay.com/api/";
 const KEY = process.env.API_KEY;
